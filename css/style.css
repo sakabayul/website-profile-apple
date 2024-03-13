@@ -1,0 +1,329 @@
+/* CSS Global */
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --background-main: rgb(255, 255, 255);
+    --background-second: rgb(44, 44, 44);
+
+    --font-main: rgb(0, 0, 0);
+    --font-second: rgb(255, 255, 255);
+}
+html{
+    font-size: 100%;
+}
+
+
+
+/* CSS Main */
+.btn-black{
+    padding: 10px 20px;
+    color:var(--font-second);
+    background-color: var(--background-second);
+    transition: ease .3s;
+}
+.btn-black:hover{
+    box-shadow: 0px 0px 5px var(--background-second);
+    color: var(--font-main);
+    background-color: var(--background-main);
+    transition: ease .3s;
+}
+.btn-white{
+    padding: 10px 20px;
+    color:var(--font-main);
+    background-color: var(--background-main);
+    transition: ease .3s;
+}
+.btn-white:hover{
+    box-shadow: 0px 0px 5px var(--background-main);
+    color: var(--font-second);
+    background-color: var(--background-second);
+    transition: ease .3s;
+}
+.display-none{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--font-second);
+    background-color: var(--background-second);
+}
+
+
+
+/* Container Navigation */
+nav{
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-second);
+}
+nav .logo, .menu, .btn-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+    color: var(--font-second);
+}
+nav .menu ul li:hover{
+    font-weight: bold;
+}
+nav .menu ul li,nav .btn-nav .btn-1 ,nav .menu ul li a{
+    display: inline;
+    padding: 0 10px;
+    color: var(--font-second);
+}
+
+/* Toggle Menu */
+.menus {
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 30px;
+    background-color: var(--background-main);
+    box-shadow: 3px 3px 10px var(--background-second);
+    padding: 10px 50px;
+}
+.menus ul {
+    list-style-type: none;
+    padding: 0;
+}
+.menus ul li {
+    padding: 8px 0;
+}
+.menus ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.menus ul li a:hover {
+    color: #666;
+}
+
+
+
+/* Container Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    min-height: 90vh;
+    color: var(--font-second);
+    background-color: var(--background-second);
+}
+header .container-text{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+header .container-img{
+    text-align: center;
+    width: 100%;
+}
+header .container-img img{
+    width: 100%;
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+
+
+/* Container Main */
+section{
+    padding: 0 5%;
+}
+/* Section About */
+section.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+section .about-img img{
+    width: 100%;
+}
+section .about-text{
+    width: 100%;
+}
+
+/* Section Fitur */
+section.fitur{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 50px;
+    color: var(--font-second);
+    background-color: var(--background-second);
+}
+section .fitur-img img{
+    width: 100%;
+}
+section .fitur-text{
+    width: 100%;
+}
+
+/* Section Service */
+section.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    scroll-margin-top: 30px;
+}
+section.service .judul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+section.service .card-service-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+section.service .card-service-group .card-service{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 30px;
+    flex: 1 1 330px;
+    padding: 20px;
+    transition: ease-in-out .5s;
+    box-shadow: 0px 0px 10px var(--background-second);
+}
+section.service .card-service-group .card-service:hover{
+    transition: ease-in-out .5s;
+    color: var(--font-second);
+    background-color: var(--background-second);
+}
+section.service .card-service-group .card-service .service-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+section.service .card-service-group .card-service .service-img i{
+    font-size: 4rem;
+}
+section.service .card-service-group .card-service .service-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+/* Section Contact */
+section.contact{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 5%;
+    color: var(--font-second);
+    background-color: var(--background-second);
+}
+section.contact .contact-text{
+    width: 100%;
+}
+section.contact .contact-text p{
+    padding: 5px;
+}
+section.contact .contact-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.contact form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    width: 60%;
+    min-width: 300px;
+    padding: 50px 30px;
+    color: var(--background-second);
+    background-color: var(--background-main);
+}
+section.contact form input{
+    border: 1px solid var(--background-second);
+    padding: 10px;
+}
+
+
+
+/* Container Footer */
+footer{
+    padding: 40px;
+    text-align: center;
+    color: var(--font-second);
+    background-color: var(--background-second);
+}
+footer a{
+    font-weight: bold;
+    color: var(--font-second);
+}
+
+
+
+/* Responsive */
+@media screen and (max-width:1050px) {
+    nav .menu{
+        display: none;
+    }
+    .display-none{
+        display: inherit;
+    }
+    header{
+        min-height: 60vh;
+    }
+    section.fitur{
+        min-height: 60vh;
+    }
+    section.about{
+        min-height: 60vh;
+    }
+}
+@media screen and (max-width:768px) {
+    html{
+        font-size: 80%;
+    }
+    nav .menu{
+        display: none;
+    }
+    header{
+        min-height: 92vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    section.fitur{
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-height: 100vh;
+    }
+    section.about{
+        justify-content: space-evenly;
+        flex-direction: column;
+        min-height: 80vh;
+    }
+    section.contact{
+        flex-direction: column;
+        padding: 50px 5%;
+    }
+    section.contact .contact-form{
+        padding-top: 30px;
+    }
+    footer{
+        padding-bottom: 30px;
+    }
+}

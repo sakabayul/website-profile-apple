@@ -1,23 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+
+    <!-- Costume CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Container Navigation Main -->
+    <nav id="home">
+        <div class="logo">
+            <h2>Apple Store</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">BERANDA</a></li>
+                <li><a href="#service">LAYANAN</a></li>
+                <li><a href="#fitur">FITUR</a></li>
+                <li><a href="#about">TENTANG</a></li>
+                <li><a href="#contact">KONTAK</a></li>
+            </ul>
+        </div>
+        <div id="menu" class="menus">
+            <ul>
+                <li><a href="#home">BERANDA</a></li>
+                <li><a href="#service">LAYANAN</a></li>
+                <li><a href="#fitur">FITUR</a></li>
+                <li><a href="#about">TENTANG</a></li>
+                <li><a href="#contact">KONTAK</a></li>
+            </ul>
+        </div>
+        <div class="btn-nav">
+            <a class="btn-1" href="">DAFTAR</a>
+            <a class="btn-white" href="">MASUK</a>
+            <button class="display-none" id="toggleBtn"><i class="fa-solid fa-bars"></i></button>
+        </div>
     </nav>
+
+
+
+    <!-- Container Header -->
+    <header>
+        <div class="container-text">
+            <h2>iPhone 15 Pro Max</h2>
+            <p>Temukan keajaiban teknologi dengan kami! Dapatkan produk-produk terbaru dan layanan terbaik untuk semua
+                kebutuhan gadget Anda. Kunjungi toko kami hari ini dan temukan pengalaman belanja yang tak tertandingi.
+                Jangan lewatkan kesempatan untuk mendapatkan teknologi terbaik di ujung jari Anda</p>
+            <a class="btn-white" href="">Beli Sekarang</a>
+        </div>
+        <div class="container-img">
+            <img src="./assets/image/Header.png" alt="">
+        </div>
+    </header>
+
+
+
+    <!-- Container Main -->
     <main>
-      <h1>Home page</h1>
+        <!-- Section Service -->
+        <section class="service" id="service">
+            <div class="judul">
+                <h1>Layanan Kami</h1>
+                <p>Aplle store hadir menjadi solusi bagi kamu</p>
+            </div>
+            <div class="card-service-group">
+                <!-- Card iPhone -->
+                <div class="card-service">
+                    <div class="service-img">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                    <div class="service-text">
+                        <h2>Beli iPhone</h2>
+                        <p>iPhone adalah serangkaian ponsel pintar yang dirancang dan diproduksi oleh perusahaan
+                            teknologi Apple Inc. iPhone terkenal karena desainnya yang elegan, antarmuka pengguna yang
+                            intuitif, serta ekosistem yang kaya dengan aplikasi dan layanan terintegrasi.</p>
+                    </div>
+                </div>
+
+                <!-- Card Macbook -->
+                <div class="card-service">
+                    <div class="service-img">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <div class="service-text">
+                        <h2>Beli MacBook</h2>
+                        <p>MacBook adalah serangkaian komputer jinjing (laptop) yang diproduksi oleh perusahaan
+                            teknologi Apple Inc. Seperti produk-produk Apple lainnya, MacBook terkenal karena desainnya
+                            yang ramping, dan kualitas konstruksi yang tinggi.</p>
+                    </div>
+                </div>
+
+                <!-- Card Apple TV -->
+                <div class="card-service">
+                    <div class="service-img">
+                        <i class="fa-solid fa-tv"></i>
+                    </div>
+                    <div class="service-text">
+                        <h2>Beli Apple TV</h2>
+                        <p>Apple TV adalah perangkat media digital yang dirancang untuk menghubungkan TV Anda dengan
+                            internet, memungkinkan streaming konten video, musik, dan permainan.</p>
+                    </div>
+                </div>
+
+                <!-- Card iPad -->
+                <div class="card-service">
+                    <div class="service-img">
+                        <i class="fa-solid fa-tablet-screen-button"></i>
+                    </div>
+                    <div class="service-text">
+                        <h2>Beli iPad</h2>
+                        <p>iPad adalah serangkaian tablet komputer yang dirancang dan diproduksi oleh perusahaan
+                            teknologi Apple Inc. iPad terkenal karena desainnya yang ramping, dan layar sentuh
+                            berkualitas tinggi.</p>
+                    </div>
+                </div>
+
+                <!-- Card Perbaiki Gadget -->
+                <div class="card-service">
+                    <div class="service-img">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <div class="service-text">
+                        <h2>Perbaiki Gadget</h2>
+                        <p>Layanan perbaikan gadget adalah layanan yang disediakan untuk memperbaiki atau memperbarui
+                            perangkat elektronik seperti ponsel cerdas (smartphone), tablet, laptop, dan perangkat
+                            lainnya yang mengalami masalah teknis atau kerusakan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Fitur -->
+        <section class="fitur" id="fitur">
+            <div class="fitur-text">
+                <h2>Fitur Terbaru iPhone 15 Pro Max</h2><br>
+                <p>1. Dynamic Island</p>
+                <p>Fitur Dynamic Island yang sebelumnya hanya tersedia untuk model Pro dan Pro Max kini hadir secara
+                    lebih merata. Perangkat iPhone 15 maupun iPhone 15 Plus yang menjadi varian terjangkau pun sekarang
+                    sudah meluncur dengan membawa dukungan tersebut.</p><br>
+                <p>2. USB Type-C</p>
+                <p>Mulai dari lini iPhone 15, Apple tampaknya mulai meninggalkan konektor Lightning sebagai antarmuka
+                    pengisian daya maupun transfer datanya. Ponsel baru mereka kini mengadopsi USB Type-C yang notabene
+                    menjadi standar untuk perangkat secara universal.</p><br>
+                <p>3. Precision Finding</p>
+                <p>Pada lini iPhone 15, Apple juga sudah menyematkan chip Ultra Wideband generasi kedua yang
+                    memungkinkan dua buah perangkat dapat tetap terhubung dan berkomunikasi meskipun berjarak sangat
+                    jauh hingga tiga kali lebih baik dari sebelumnya.</p><br>
+                <p>4. Smart HDR 5</p>
+                <p>Selain membawa sistem kamera yang lebih maju dengan resolusi lensa utama lebih tinggi, iPhone 15 juga
+                    hadir dengan Smart HDR generasi baru. Fitur ini mempunyai kemampuan yang lebih baik untuk menangani
+                    pengambilan gambar di lingkungan dengan kondisi cahaya terlalu terang maupun tidak merata.</p>
+            </div>
+            <div class="fitur-img">
+                <img src="./assets/image/Fitur.png" alt="">
+            </div>
+        </section>
+
+        <!-- Section About -->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="./assets/image/About.png" alt="">
+            </div>
+            <div class="about-text">
+                <h2>Tentang Apple Store</h2><br>
+                <p>Apple Store adalah ritel resmi yang dimiliki dan dioperasikan oleh Apple Inc. di berbagai lokasi di
+                    seluruh dunia. Ini adalah tempat di mana pelanggan dapat membeli produk-produk Apple seperti iPhone,
+                    iPad, Mac, Apple Watch, dan aksesori resmi lainnya. Selain itu, Apple Store juga menawarkan layanan
+                    seperti perbaikan perangkat, konsultasi teknis, dan kelas belajar. Desain interior toko yang modern
+                    dan ramah pengguna mencerminkan filosofi desain Apple yang bersih dan minimalis. Apple Store juga
+                    dikenal karena layanan pelanggan yang unggul dan pengalaman belanja yang menyenangkan bagi para
+                    pengunjungnya.</p>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section class="contact" id="contact">
+            <div class="contact-text">
+                <h2>Butuh Konsultasi? Silahkan hubungi kami, kami siap melayani dan membantu</h2><br>
+                <h4>Kontak:</h4>
+                <p><i class="fa-solid fa-house"></i> Jl. Blok M 23, Jakarta Selatan, Indonesia</p>
+                <P><i class="fa-solid fa-phone"></i> 021-1232-4321</P>
+                <P><i class="fa-solid fa-envelope"></i> applestore@apple.com</P>
+                <br>
+                <h4>Sosial Media:</h4>
+                <p><i class="fa-brands fa-square-facebook"></i> Facebook</p>
+                <p><i class="fa-brands fa-square-twitter"></i> Twitter</p>
+                <p><i class="fa-brands fa-square-instagram"></i> Instagram</p>
+                <p><i class="fa-brands fa-square-youtube"></i> You Tube</p>
+                <p><i class="fa-brands fa-tiktok"></i> Tik Tok</p>
+            </div>
+            <div class="contact-form">
+                <form action="contact">
+                    <h2>Ada Pertanyaan?</h2>
+                    <input type="email" placeholder="Masukan email.." required>
+                    <input type="text" placeholder="Masukan pertanyaan.." required>
+                    <button class="btn-black" type="submit">Kirim</button>
+                </form>
+            </div>
+        </section>
     </main>
-  </body>
+
+
+
+    <!-- Container Footer -->
+    <footer>
+        <p>Copyright © 2024. Design By | <a href="https://sakabayul.github.io/" target="_blank">Saka Bayu</a></p>
+    </footer>
+
+
+
+    <!-- Script FontAwesome -->
+    <script src="https://kit.fontawesome.com/ffa3ed8b39.js" crossorigin="anonymous"></script>
+
+    <!-- Script Custome -->
+    <script src="./js/script.js"></script>
+</body>
+
 </html>

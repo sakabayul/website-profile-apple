@@ -1,3 +1,3 @@
 # website-profile-apple
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/sakabayul/website-profile-apple)
+Contact: Linkedin: https://www.linkedin.com/in/saka-bayu-l GitHub: https://github.com/sakabayul
