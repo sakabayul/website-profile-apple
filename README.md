@@ -1,3 +1,9 @@
-# website-profile-apple
+# Website Profile Apple
 
-Contact: Linkedin: https://www.linkedin.com/in/saka-bayu-l GitHub: https://github.com/sakabayul
+Design UI/UX By: Saka Bayu
+Web Development By: Saka Bayu
+<br>
+<br>
+Contact me: <br>
+Linkedin: https://www.linkedin.com/in/saka-bayu-l <br>
+GitHub: https://github.com/sakabayul
